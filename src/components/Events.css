@@ -1,0 +1,82 @@
+/* General styling for the Events component */
+.events-page {
+    padding: 20px;
+    background-color: #181818;
+    color: #e5e5e5;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 60px;
+  }
+
+  h2 {
+    text-align: center; /* Center the h2 text */
+    color: #9147ff; /* Optional: Set a color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+
+
+  
+  .events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .event-card {
+    display: flex;
+    background-color: #202020;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+  }
+  
+  .event-image {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .event-details {
+    padding: 15px;
+    flex-grow: 1;
+  }
+  
+  .event-title {
+    font-size: 18px;
+    margin: 0;
+    color: #9147ff;
+  }
+  
+  .event-date-time {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 5px 0;
+  }
+  
+  .event-description {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    .event-card {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .event-image {
+      width: 100%;
+      height: auto;
+    }
+  
+    .event-details {
+      text-align: center;
+    }
+  }
+  
